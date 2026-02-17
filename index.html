@@ -240,17 +240,6 @@
             <!-- Selected recommendation will be rendered here by JavaScript -->
         </div>
 
-        <section class="about-service">
-            <h2>서비스 소개</h2>
-            <p>
-                '을지로 점심메뉴 추천'은 바쁜 을지로 직장인들과 방문객들을 위해 기획된 웹 서비스입니다.
-                점심시간마다 반복되는 메뉴 고민을 덜어주고, 숨겨진 맛집을 발견하는 즐거움을 드리고자 합니다.
-                제공되는 모든 정보는 온라인 검색 및 방문 리뷰를 기반으로 신중하게 선별되었으며,
-                지속적인 업데이트를 통해 더욱 정확하고 풍부한 정보를 제공할 것을 약속드립니다.
-                여러분들의 만족스러운 점심 경험을 위해 최선을 다하겠습니다.
-            </p>
-        </section>
-
         <footer>
             <p>&copy; 2026 을지로 점심 추천 | 모든 정보는 변경될 수 있으므로, 방문 전 확인 부탁드립니다.</p>
         </footer>
@@ -259,28 +248,28 @@
     <script>
         const lunchRecommendations = [
             // 한식 (Korean)
-            { id: 1, name: '강남교자 센터원점', cuisine: '한식 (칼국수/만두)', description: '센터원 건물 내 위치, 시원한 국물과 부드러운 면의 칼국수, 든든한 만두가 인기입니다. 특히 뽀얀 국물과 함께 나오는 만두는 점심시간 든든함을 더해줍니다.', location: '센터원 지하 2층, 을지로입구역 4번 출구 연결', priceRange: '1만원대 중반' },
-            { id: 2, name: '매생이굴국밥 장교점', cuisine: '한식 (굴국밥)', description: '장교빌딩 1층에 위치, 신선한 굴과 매생이로 시원하고 건강한 한 끼를 즐길 수 있습니다. 뜨끈한 국물로 속을 편안하게 해주는 데 좋습니다.', location: '장교빌딩 1층, 을지로입구역 3번 출구 인근', priceRange: '1만원대 초반' },
-            { id: 3, name: '청와옥', cuisine: '한식 (순댓국/편백정식)', description: '진한 국물의 깔끔한 순댓국과 웰빙 편백정식이 유명한 곳입니다. 웨이팅이 있을 수 있지만, 그만큼 맛과 만족도가 높습니다.', location: '을지로3가역 11번 출구에서 도보 5분', priceRange: '1만원대 중반' },
-            { id: 4, name: '대련집', cuisine: '한식 (칼국수/보쌈)', description: '가성비 좋은 사골 칼국수와 부드러운 생배추 보쌈의 조화가 일품인 노포입니다. 점심 특선 보쌈정식은 특히 인기가 많습니다.', location: '르메이에르 종로타운 1층, 종로1가 (광화문역 인근)', priceRange: '1만원대 중반' },
+            { id: 1, name: '강남교자 센터원점', cuisine: '한식 (칼국수/만두)', description: '센터원 건물 내 위치, 시원한 국물과 부드러운 면의 칼국수, 든든한 만두가 인기입니다.', location: '센터원 지하 2층, 을지로입구역 4번 출구 연결', priceRange: '1만원대 중반' },
+            { id: 2, name: '매생이굴국밥 장교점', cuisine: '한식 (굴국밥)', description: '장교빌딩 1층에 위치, 신선한 굴과 매생이로 시원하고 건강한 한 끼를 즐길 수 있습니다.', location: '장교빌딩 1층 (센터원 도보 5분)', priceRange: '1만원대 초반' },
+            { id: 3, name: '청와옥', cuisine: '한식 (순댓국/편백정식)', description: '진한 국물의 깔끔한 순댓국과 웰빙 편백정식이 유명한 곳입니다. 웨이팅이 있을 수 있습니다.', location: '을지로3가역 11번 출구에서 도보 5분', priceRange: '1만원대 중반' },
+            { id: 4, name: '대련집', cuisine: '한식 (칼국수/보쌈)', description: '가성비 좋은 사골 칼국수와 부드러운 생배추 보쌈의 조화가 일품인 노포입니다. 점심 특선 보쌈정식은 특히 인기가 많습니다.', location: '종로1가 르메이에르 종로타운 1층 (광화문역 인근)', priceRange: '1만원대 중반' },
             { id: 5, name: '을지다락', cuisine: '한식 (퓨전 파스타)', description: '한국적인 맛을 가미한 퓨전 파스타 전문점, 매콤크림파스타와 차돌박이들깨파스타가 인기입니다. 젊은 층에 특히 인기 많습니다.', location: '을지로3가 342-1, 을지로3가역 1번 출구 도보 3분', priceRange: '1만원대 후반' },
             { id: 6, name: '은주정', cuisine: '한식 (김치찌개)', description: '36년 전통, 숙성 김치로 끓여낸 얼큰하고 깊은 맛의 김치찌개를 맛볼 수 있습니다. 푸짐한 양과 라면사리는 필수입니다.', location: '을지로4가역 1번 출구에서 도보 5분', priceRange: '1만원대 초반' },
             { id: 7, name: '평래옥', cuisine: '한식 (평양냉면/닭무침)', description: '71년 전통을 자랑하는 노포 평양냉면과 별미인 닭무침은 꼭 맛봐야 할 메뉴입니다. 여름철 시원한 점심으로 제격입니다.', location: '을지로3가역 4번 출구에서 도보 3분', priceRange: '1만원대 중반' },
             { id: 8, name: '한일관', cuisine: '한식 (궁중 한정식/너비아니)', description: '1939년에 오픈한 궁중 한정식 전문점, 부드러운 너비아니가 유명합니다. 격식 있고 품격 있는 점심 식사에 좋습니다.', location: '광화문 파이낸스센터 지하1층, 광화문역 5번 출구 연결', priceRange: '2만원대 후반 이상' },
             { id: 9, name: '숭례도담 시청역', cuisine: '한식', description: '깔끔하고 정갈한 분위기에서 즐기는 정통 한식 코스 또는 단품 요리. 비즈니스 런치 모임 장소로도 훌륭합니다.', location: '시청역 8번 출구에서 도보 3분', priceRange: '2만원대 초반' },
             { id: 10, name: '황소고집 종각역', cuisine: '한식 (돼지갈비/냉면)', description: '숯불 향 가득한 양념 돼지갈비와 시원한 냉면의 조합이 좋습니다. 고기 점심으로 든든하게 즐겨보세요.', location: '종각역 4번 출구에서 도보 7분', priceRange: '1만원대 중반' },
-            { id: 11, name: '순남시래기 명동점', cuisine: '한식 (시래기국/도토리묵)', description: '따뜻하고 구수한 시래기국과 다양한 건강 곁들임 메뉴가 있습니다. 부담 없이 건강한 점심을 찾는 분께 추천합니다.', location: '명동역 6번 출구에서 도보 5분', priceRange: '만원 이하' },
+            { id: 11, name: '순남시래기 명동점', cuisine: '한식 (시래기국/도토리묵)', description: '따뜻하고 구수한 시래기국과 다양한 건강 곁들임 메뉴가 있습니다. 부담 없이 건강한 점심을 찾는 분께 추천.', location: '명동역 6번 출구에서 도보 5분', priceRange: '만원 이하' },
             { id: 12, name: '한국집 롯데백화점본점', cuisine: '한식 (전주비빔밥)', description: '전통 전주비빔밥의 깊은 맛을 느낄 수 있는 곳입니다. 롯데백화점 쇼핑 후 식사로도 편리합니다.', location: '롯데백화점 본점 지하 1층 푸드코트, 을지로입구역 7번 출구 연결', priceRange: '1만원대 초반' },
             { id: 13, name: '이조식탁 을지로3가역', cuisine: '한식 (백반)', description: '집밥 같은 편안함, 매일 바뀌는 다양한 백반 메뉴를 맛볼 수 있습니다. 가성비 좋은 푸짐한 백반집으로 인기입니다.', location: '을지로3가역 1번 출구에서 도보 2분', priceRange: '만원 이하' },
-            { id: 14, name: '지하식당 (을지로4가역)', cuisine: '한식 (멸치국수/김밥)', description: '진한 멸치 육수의 국수와 든든한 김밥으로 간단하지만 든든한 한 끼 해결! 바쁜 점심시간에 제격입니다.', location: '을지로4가역 7번 출구에서 도보 5분', priceRange: '만원 이하' },
-            { id: 15, name: '잊지마식당 (을지로4가역)', cuisine: '한식 (생선구이/백반)', description: '갓 구운 고소한 생선구이와 푸짐한 백반으로 든든한 점심을 즐기세요. 백반정식이 특히 강추되는 메뉴입니다.', location: '을지로4가역 7번 출구에서 도보 5분', priceRange: '1만원대 초반' },
+            { id: 14, name: '지하식당 (을지로4가역)', cuisine: '한식 (국수/김밥)', description: '진한 멸치 육수의 국수와 든든한 김밥으로 간단하지만 든든한 한 끼 해결! 바쁜 점심시간에 제격입니다.', location: '을지로4가역 7번 출구에서 도보 5분', priceRange: '만원 이하' },
+            { id: 15, name: '잊지마식당 (을지로4가역)', cuisine: '한식 (생선구이/백반)', description: '갓 구운 고소한 생선구이와 푸짐한 백반으로 든든한 점심을 즐기세요. 백반정식 강추!', location: '을지로4가역 7번 출구에서 도보 5분', priceRange: '1만원대 초반' },
 
             // 중식 (Chinese)
-            { id: 16, name: '안동장', cuisine: '중식 (굴짬뽕/간풍 중새우)', description: '1948년부터 이어진 70년 전통의 노포, 겨울철 별미인 시원한 굴짬뽕과 고급스러운 간풍 중새우가 일품입니다. 역사 깊은 맛집에서 특별한 경험을 해보세요.', location: '을지로3가역 6번 출구에서 도보 4분', priceRange: '2만원대 초반' },
-            { id: 17, name: '고량주관', cuisine: '중식 (다양한 요리)', description: '종각역 인근, 캐주얼한 분위기에서 다양한 중식 요리와 고량주를 즐길 수 있습니다. 점심 특선 요리도 훌륭합니다.', location: '종각역 4번 출구에서 도보 8분', priceRange: '1만원대 후반' },
-            { id: 18, name: '초류향', cuisine: '중식 (마파두부)', description: '을지로입구역 근처, 부드러운 두부와 매콤한 양념의 조화가 뛰어난 마파두부 맛집입니다. 마파두부 덮밥이 특히 인기 메뉴입니다.', location: '을지로입구역 3번 출구에서 도보 2분', priceRange: '1만원대 초반' },
-            { id: 19, name: '가야성', cuisine: '중식 (짬뽕/짜장)', description: '해산물이 푸짐하게 들어간 시원한 국물의 짬뽕과 정통 짜장면을 맛볼 수 있습니다. 해장이나 든든한 한 끼로 좋습니다.', location: '을지로3가역 10번 출구에서 도보 6분', priceRange: '만원 이하' },
-            { id: 20, name: '제일호', cuisine: '중식 (쟁반짜장/짬뽕)', description: '매콤한 부추와 청양고추가 어우러진 쟁반짜장이 인기이며, 얼큰한 짬뽕도 추천합니다. 직장인 점심 식사로 강력 추천합니다.', location: '을지로입구역 4번 출구에서 도보 3분', priceRange: '1만원대 중반' },
+            { id: 16, name: '안동장', cuisine: '중식 (굴짬뽕/간풍 중새우)', description: '1948년부터 이어진 70년 전통의 노포, 겨울철 별미인 시원한 굴짬뽕과 고급스러운 간풍 중새우가 일품입니다. 역사 깊은 맛집에서 특별한 경험을 해보세요.', location: '을지로3가역 6번 출구 근처 (도보 4분)', priceRange: '2만원대 초반' },
+            { id: 17, name: '고량주관', cuisine: '중식', description: '종각역 인근, 캐주얼한 분위기에서 다양한 중식 요리와 고량주를 즐길 수 있습니다. 점심 특선 요리도 훌륭합니다.', location: '종각역 4번 출구에서 도보 8분', priceRange: '1만원대 후반' },
+            { id: 18, name: '초류향', cuisine: '중식 (마파두부)', description: '을지로입구역 근처, 부드러운 두부와 매콤한 양념의 조화가 뛰어난 마파두부 맛집입니다. 마파두부 덮밥이 특히 인기 메뉴입니다.', location: '을지로입구역 3번 출구 근처 (도보 2분)', priceRange: '1만원대 초반' },
+            { id: 19, name: '가야성', cuisine: '중식 (짬뽕/짜장)', description: '해산물이 푸짐하게 들어간 시원한 국물의 짬뽕과 정통 짜장면을 맛볼 수 있습니다. 해장이나 든든한 한 끼로 좋습니다.', location: '을지로3가역 10번 출구 근처 (도보 6분)', priceRange: '만원 이하' },
+            { id: 20, name: '제일호', cuisine: '중식 (쟁반짜장/짬뽕)', description: '매콤한 부추와 청양고추가 어우러진 쟁반짜장이 인기이며, 얼큰한 짬뽕도 추천합니다. 직장인 점심 식사로 강력 추천합니다.', location: '을지로입구역 4번 출구 근처 (도보 3분)', priceRange: '1만원대 중반' },
             { id: 21, name: '촨촨지우바 세운상가', cuisine: '중식 (훠궈/꿔바로우)', description: '세운상가의 이색적인 중식당, 든든한 훠궈와 바삭한 꿔바로우가 별미입니다. 특별한 점심을 찾는 분께 좋습니다.', location: '세운상가 3층, 종로3가역 12번 출구에서 도보 5분', priceRange: '2만원대 중반' },
             { id: 22, name: '룽키 충무로', cuisine: '중식', description: '충무로의 숨은 중식 노포, 깊은 맛의 짜장면과 다양한 요리를 즐겨보세요. 옛날 방식의 짜장면 맛집으로 알려져 있습니다.', location: '충무로역 1번 출구에서 도보 10분', priceRange: '만원 이하' },
             { id: 23, name: '오구반점', cuisine: '중식 (군만두/짜장면)', description: '바삭하게 튀겨낸 군만두와 옛날 스타일의 고소한 짜장면이 유명합니다. 점심시간에는 항상 붐비는 인기 맛집입니다.', location: '을지로1가 시그니처타워 B1층, 을지로입구역 3번 출구 연결', priceRange: '1만원대 중반' },
@@ -304,7 +293,7 @@
             { id: 39, name: '움푹 을지로3가', cuisine: '일식 (타다끼)', description: '부드러운 소고기 타다끼가 특히 유명한 아늑한 이자카야입니다. 점심에는 정갈한 식사 메뉴도 제공합니다.', location: '을지로3가 342-12 (도보 8분)', priceRange: '2만원대 초반 (점심)' },
             { id: 40, name: '스시이로', cuisine: '일식 (스시 오마카세)', description: '을지로입구역 근처, 합리적인 가격으로 즐기는 스시 오마카세. 런치 오마카세는 가성비가 훌륭합니다.', location: '을지로입구역 4번 출구에서 도보 2분', priceRange: '3만원대' },
             { id: 41, name: '갓포아키 을지로점', cuisine: '일식 (갓포요리)', description: '고급스러운 분위기에서 정통 갓포요리를 맛볼 수 있습니다. 비즈니스 런치로도 훌륭하며, 섬세한 요리가 돋보입니다.', location: '을지로1가 시그니처타워 B1층 (을지로입구역 3번 출구 도보 7분)', priceRange: '3만원대 이상' },
-            { id: 42, name: '쿠마카롱', cuisine: '일식 (돈까스/카레)', description: '바삭하고 두툼한 돈까스와 수제 카레가 일품인 맛집입니다. 돈까스 덕후에게 강력 추천하는 곳!', location: '을지로3가역 11번 출구에서 도보 5분', priceRange: '1만원대 초반' }
+            { id: 42, name: '쿠마카롱', cuisine: '일식 (돈까스/카레)', description: '바삭하고 두툼한 돈까스와 수제 카레가 일품인 맛집입니다. 돈까스 덕후에게 강력 추천!', location: '을지로3가역 11번 출구 근처 (도보 5분)', priceRange: '1만원대 초반' }
         ];
 
         let currentRecommendation = null;
@@ -337,28 +326,19 @@
                     const appUrl = `navermap://search?query=${encodeURIComponent(searchQuery)}&appname=EuljiroLunchRecommender`;
                     const webUrl = `https://m.map.naver.com/search/result.naver?query=${encodeURIComponent(searchQuery)}`;
                     
-                    let appOpened = false;
-                    const appWindow = window.open(appUrl, '_blank'); // Try to open app link
+                    // Attempt to open the app deep link
+                    const newWindow = window.open(appUrl, '_blank'); 
                     
-                    // Use a timeout as a heuristic to check if the app opened
+                    // Fallback to web URL after a delay if app didn't open
                     setTimeout(() => {
-                        // If the window/tab is still focused on our page (app didn't open), redirect to web map
-                        // This heuristic is not 100% reliable across all devices/browsers
-                        if (!appOpened && appWindow && appWindow.closed) { // Check if window was opened and then immediately closed (e.g. app took over)
-                             // Do nothing, app likely opened
-                        } else if (!document.hidden) { // Check if browser window is still visible
-                            window.open(webUrl, '_blank'); // Fallback to web map
+                        // Check if the new window is still about:blank or was closed by app
+                        if (newWindow && newWindow.location.href === 'about:blank') {
+                            // If the new window is still about:blank, it means the app didn't launch
+                            newWindow.location.href = webUrl; // Navigate the *new* tab/window to web URL
+                        } else if (!document.hidden) { // If app didn't take focus and newWindow might be null/closed
+                            window.location.href = webUrl; // Navigate *current* page to web URL as a last resort
                         }
-                    }, 500); // Wait 500ms. Adjust as needed.
-
-                    // Listen for visibility change to detect if app took focus
-                    const handleVisibilityChange = () => {
-                        if (document.hidden) {
-                            appOpened = true; // Browser tab is hidden, app likely opened
-                        }
-                        document.removeEventListener('visibilitychange', handleVisibilityChange);
-                    };
-                    document.addEventListener('visibilitychange', handleVisibilityChange);
+                    }, 500); // 500ms delay for app to launch
                 });
                 displayElement.appendChild(card);
             } else {

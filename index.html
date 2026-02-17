@@ -210,7 +210,7 @@
             <p>
                 사용법은 아주 간단합니다. 페이지 상단에 있는 <strong>"오늘 뭐 먹지? (추천받기)"</strong> 버튼을 클릭하기만 하면 됩니다.
                 버튼을 누를 때마다 저희가 엄선한 을지로 맛집 리스트 중에서 무작위로 하나의 식당을 추천해 드립니다.
-                추천받은 식당 카드를 클릭하면 네이버 지도에서 해당 식당을 바로 찾아볼 수 있습니다.
+                추천받은 식당 카드를 클릭하면 네이버 지도 앱에서 해당 식당을 바로 찾아볼 수 있습니다.
                 마음에 드는 식당이 나올 때까지 몇 번이고 눌러보세요! 더 이상 점심 메뉴 고민으로 시간을 낭비할 필요가 없습니다.
             </p>
         </section>
@@ -301,8 +301,9 @@
                 `;
                 card.addEventListener('click', () => {
                     const restaurantName = card.dataset.name;
-                    // Removed '을지로' from the search query as per user feedback
-                    const mapUrl = `https://m.map.naver.com/search/result.naver?query=${encodeURIComponent(restaurantName)}`;
+                    // Changed from web to app deep link
+                    // Added &appname for attribution. If app not installed, this link might not work.
+                    const mapUrl = `navermap://search?query=${encodeURIComponent(restaurantName)}&appname=EuljiroLunchRecommender`;
                     window.open(mapUrl, '_blank');
                 });
                 displayElement.appendChild(card);

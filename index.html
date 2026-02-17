@@ -14,7 +14,7 @@
             color: #333;
         }
         .container {
-            max-width: 900px;
+            max-width: 600px; /* Adjusted for single card display */
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
@@ -60,36 +60,34 @@
             transform: translateY(0);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        .recommendation-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+        /* Only one card will be displayed, no grid */
+        .recommendation-display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px; /* Ensure content area is visible */
         }
         .recommendation-card {
             border: 1px solid #e0e0e0;
             border-radius: 8px;
-            padding: 15px;
+            padding: 20px;
             background-color: #f9f9f9;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             text-align: left;
-        }
-        .recommendation-card.selected {
-            border-color: #007bff; /* Blue border for selected item */
-            background-color: #e0f2f7; /* Light blue background */
-            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
-            transform: translateY(-5px);
+            width: 100%; /* Take full width of container */
+            box-sizing: border-box; /* Include padding in width */
         }
         .recommendation-card h3 {
             color: #333;
             margin-top: 0;
             margin-bottom: 10px;
-            font-size: 1.4em;
+            font-size: 1.6em;
         }
         .recommendation-card p {
             color: #555;
             margin-bottom: 5px;
-            font-size: 0.95em;
+            font-size: 1em;
         }
         .recommendation-card p strong {
             color: #000;
@@ -108,15 +106,15 @@
     <div class="container">
         <header>
             <h1>을지로 점심메뉴 추천</h1>
-            <p>오늘 점심 뭐 먹지? 고민될 땐 여기서 골라보세요!</p>
+            <p>버튼을 눌러 오늘 점심 메뉴를 추천받으세요!</p>
         </header>
 
         <div class="random-picker">
-            <button class="pick-button" id="pickRandomButton">오늘 뭐 먹지? (무작위 추천)</button>
+            <button class="pick-button" id="pickRandomButton">오늘 뭐 먹지? (추천받기)</button>
         </div>
 
-        <div class="recommendation-list" id="recommendationList">
-            <!-- Recommendations will be rendered here by JavaScript -->
+        <div class="recommendation-display" id="recommendationDisplay">
+            <!-- Selected recommendation will be rendered here by JavaScript -->
         </div>
 
         <footer>
@@ -126,56 +124,82 @@
 
     <script>
         const lunchRecommendations = [
-            { id: 1, name: '을지면옥', cuisine: '한식 (냉면)', description: '평양냉면의 정석, 깔끔하고 깊은 육수', location: '을지로3가역 근처' },
-            { id: 2, name: '부민옥', cuisine: '한식 (곰탕/수육)', description: '따뜻한 곰탕과 맛있는 수육', location: '을지로1가역 근처' },
-            { id: 3, name: '산수갑산', cuisine: '한식 (순대국)', description: '진한 국물의 순대국밥과 모듬순대', location: '을지로3가역 근처' },
-            { id: 4, name: '포장마차 (다동 먹자골목)', cuisine: '분식/한식', description: '다양한 포장마차 음식, 점심특선', location: '다동 먹자골목' },
-            { id: 5, name: '명동칼국수', cuisine: '한식 (칼국수)', description: '든든하고 뜨끈한 칼국수', location: '명동성당 근처' },
-            { id: 6, name: '정원순대국', cuisine: '한식 (순대국)', description: '얼큰하고 푸짐한 순대국', location: '센터원 주변' },
-            { id: 7, name: '일식당 키세츠', cuisine: '일식 (돈까스/벤또)', description: '바삭한 돈까스와 신선한 벤또', location: '센터원 지하1층' },
-            { id: 8, name: '스파게티 스토리', cuisine: '양식 (파스타)', description: '다양한 종류의 가성비 좋은 파스타', location: '센터원 주변' }
+            // 한식 (Korean) - approximately 15-20 entries
+            { id: 1, name: '강남교자 센터원점', cuisine: '한식 (칼국수)', description: '시원한 국물과 부드러운 면, 만두가 별미', location: '센터원 지하 2층' },
+            { id: 2, name: '매생이굴국밥 장교점', cuisine: '한식 (굴국밥)', description: '시원하고 건강한 매생이 굴국밥', location: '장교빌딩 근처' },
+            { id: 3, name: '청와옥', cuisine: '한식 (순댓국)', description: '진한 국물의 깔끔한 순댓국과 편백정식', location: '을지로3가역 근처' },
+            { id: 4, name: '대련집', cuisine: '한식 (칼국수/보쌈)', description: '가성비 좋은 사골 칼국수와 생배추 보쌈', location: '종로1가 근처' },
+            { id: 5, name: '을지다락', cuisine: '한식 (퓨전 파스타)', description: '매콤크림파스타, 차돌박이들깨파스타 등 퓨전 한식', location: '을지로3가역 근처' },
+            { id: 6, name: '은주정', cuisine: '한식 (김치찌개)', description: '36년 전통의 얼큰한 김치찌개', location: '을지로4가역 근처' },
+            { id: 7, name: '평래옥', cuisine: '한식 (평양냉면)', description: '71년 전통 노포의 깊은 평양냉면', location: '을지로3가역 근처' },
+            { id: 8, name: '한일관', cuisine: '한식 (궁중 한정식)', description: '너비아니가 유명한 궁중 한정식 전문점', location: '광화문/시청 근처' },
+            { id: 9, name: '숭례도담 시청역', cuisine: '한식', description: '깔끔하고 정갈한 한식 식당', location: '시청역 근처' },
+            { id: 10, name: '황소고집 종각역', cuisine: '한식 (돼지갈비)', description: '숯불 향 가득한 돼지갈비', location: '종각역 근처' },
+            { id: 11, name: '순남시래기 명동점', cuisine: '한식 (시래기국)', description: '따뜻하고 구수한 시래기국 정식', location: '명동역 근처' },
+            { id: 12, name: '한국집 롯데백화점본점', cuisine: '한식 (전주비빔밥)', description: '전통 전주비빔밥 맛집', location: '롯데백화점 본점 지하' },
+            { id: 13, name: '이조식탁 을지로3가역', cuisine: '한식', description: '다양한 백반 메뉴', location: '을지로3가역 근처' },
+            { id: 14, name: '지하식당 (을지로4가역)', cuisine: '한식 (국수)', description: '멸치국수와 칼국수가 맛있는 분식집', location: '을지로4가역 근처' },
+            { id: 15, name: '잊지마식당 (을지로4가역)', cuisine: '한식 (생선구이)', description: '갓 구운 생선구이 백반', location: '을지로4가역 근처' },
+            // 중식 (Chinese) - approximately 15-20 entries
+            { id: 16, name: '안동장', cuisine: '중식 (굴짬뽕/간풍 중새우)', description: '70년 전통의 노포, 매운 굴짬뽕과 간풍 중새우', location: '을지로3가 근처' },
+            { id: 17, name: '고량주관', cuisine: '중식', description: '다양한 요리와 고량주를 즐길 수 있는 곳', location: '종각역 근처' },
+            { id: 18, name: '초류향', cuisine: '중식 (마파두부)', description: '을지로입구역 근처, 부드러운 마파두부', location: '을지로입구역 근처' },
+            { id: 19, name: '가야성', cuisine: '중식 (짬뽕)', description: '해물이 푸짐하고 시원한 국물의 짬뽕', location: '을지로3가역 근처' },
+            { id: 20, name: '제일호', cuisine: '중식 (쟁반짜장)', description: '맵싸한 부추와 청양고추 쟁반짜장', location: '을지로입구역 근처' },
+            { id: 21, name: '촨촨지우바 세운상가', cuisine: '중식 (훠궈/꿔바로우)', description: '세운상가의 이색적인 훠궈와 꿔바로우', location: '세운상가' },
+            { id: 22, name: '룽키 충무로', cuisine: '중식', description: '충무로의 숨은 중식 맛집', location: '충무로 근처' },
+            { id: 23, name: '오구반점', cuisine: '중식 (군만두/짜장면)', description: '바삭한 군만두와 옛날 짜장면', location: '을지로1가 근처' },
+            { id: 24, name: '송탄영빈루 을지타워점', cuisine: '중식', description: '깔끔한 분위기의 중식당', location: '을지타워' },
+            { id: 25, name: '보배반점 을지로점', cuisine: '중식', description: '을지로의 인기 중식 체인점', location: '을지로2가 근처' },
+            { id: 26, name: '을지반점 광장시장', cuisine: '중식', description: '광장시장 근처의 가성비 중식', location: '광장시장 근처' },
+            { id: 27, name: '개화 명동', cuisine: '중식', description: '명동에서 오래된 중식당', location: '명동 근처' },
+            { id: 28, name: '일일향 명동점', cuisine: '중식', description: '수요미식회에 나온 유명 중식당', location: '명동 근처' },
+            { id: 29, name: '원흥 을지로입구역', cuisine: '중식', description: '을지로입구역 근처의 인기 중식당', location: '을지로입구역 근처' },
+            // 일식 (Japanese) - approximately 15-20 entries
+            { id: 30, name: '진작', cuisine: '일식', description: '을지로3가의 트렌디한 일식', location: '을지로3가' },
+            { id: 31, name: '도우또', cuisine: '일식 (일본 가정식)', description: '을지로3가의 높은 평점 일본 가정식', location: '을지로3가' },
+            { id: 32, name: '박지후스시', cuisine: '일식 (스시)', description: '충무로의 스시 전문점', location: '충무로' },
+            { id: 33, name: '스시 조', cuisine: '일식 (고급 스시)', description: '웨스틴 조선 호텔의 고급 스시 오마카세', location: '시청/소공동' },
+            { id: 34, name: '오복수산참치 광화문점', cuisine: '일식 (카이센동)', description: '신선한 해산물이 가득한 카이센동', location: '광화문 근처' },
+            { id: 35, name: '종로돈부리', cuisine: '일식 (돈부리)', description: '종각의 가성비 좋은 돈부리', location: '종각역 근처' },
+            { id: 36, name: '지유켄', cuisine: '일식', description: '을지로3가역 근처의 일본식 카레', location: '을지로3가역 근처' },
+            { id: 37, name: '키노이에 오장동', cuisine: '일식', description: '을지로4가 숨은 일식 맛집', location: '을지로4가' },
+            { id: 38, name: '우동키노야 을지로점', cuisine: '일식 (우동)', description: '쫄깃한 면발과 튀김이 일품인 우동', location: '을지로2가 근처' },
+            { id: 39, name: '움푹 을지로3가', cuisine: '일식 (타다끼)', description: '부드러운 타다끼가 유명한 이자카야', location: '을지로3가' },
+            { id: 40, name: '스시이로', cuisine: '일식 (스시)', description: '가성비 좋은 오마카세', location: '을지로입구역 근처' },
+            { id: 41, name: '갓포아키 을지로점', cuisine: '일식 (갓포요리)', description: '고급스러운 갓포요리', location: '을지로1가 근처' },
+            { id: 42, name: '쿠마카롱', cuisine: '일식 (돈까스)', description: '바삭한 돈까스 맛집', location: '을지로3가역 근처' }
         ];
 
-        let selectedRecommendationId = null;
+        let currentRecommendation = null;
 
-        function renderRecommendations() {
-            const listElement = document.getElementById('recommendationList');
-            listElement.innerHTML = ''; // Clear existing list
+        function renderRecommendation() {
+            const displayElement = document.getElementById('recommendationDisplay');
+            displayElement.innerHTML = ''; // Clear previous
 
-            lunchRecommendations.forEach(rec => {
+            if (currentRecommendation) {
                 const card = document.createElement('div');
                 card.classList.add('recommendation-card');
-                if (rec.id === selectedRecommendationId) {
-                    card.classList.add('selected');
-                }
                 card.innerHTML = `
-                    <h3>${rec.name}</h3>
-                    <p><strong>종류:</strong> ${rec.cuisine}</p>
-                    <p><strong>설명:</strong> ${rec.description}</p>
-                    <p><strong>위치:</strong> ${rec.location}</p>
+                    <h3>${currentRecommendation.name}</h3>
+                    <p><strong>종류:</strong> ${currentRecommendation.cuisine}</p>
+                    <p><strong>설명:</strong> ${currentRecommendation.description}</p>
+                    <p><strong>위치:</strong> ${currentRecommendation.location}</p>
                 `;
-                listElement.appendChild(card);
-            });
-
-            // Scroll to selected item if any
-            if (selectedRecommendationId !== null) {
-                setTimeout(() => {
-                    const selectedElement = document.querySelector('.recommendation-card.selected');
-                    if (selectedElement) {
-                        selectedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                }, 100);
+                displayElement.appendChild(card);
+            } else {
+                displayElement.innerHTML = '<p>버튼을 눌러 점심 메뉴를 추천받으세요!</p>';
             }
         }
 
         function pickRandomRecommendation() {
             const randomIndex = Math.floor(Math.random() * lunchRecommendations.length);
-            selectedRecommendationId = lunchRecommendations[randomIndex].id;
-            renderRecommendations(); // Re-render to highlight
+            currentRecommendation = lunchRecommendations[randomIndex];
+            renderRecommendation();
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            renderRecommendations(); // Initial render of all recommendations
+            renderRecommendation(); // Initial display (empty or message)
             document.getElementById('pickRandomButton').addEventListener('click', pickRandomRecommendation);
         });
     </script>

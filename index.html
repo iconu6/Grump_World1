@@ -230,53 +230,53 @@
 
     <script>
         const lunchRecommendations = [
-            // 한식 (Korean) - approximately 15-20 entries
-            { id: 1, name: '강남교자 센터원점', cuisine: '한식 (칼국수/만두)', description: '센터원 건물 내 위치, 시원한 국물과 부드러운 면의 칼국수, 든든한 만두가 인기입니다.', location: '센터원 지하 2층' },
-            { id: 2, name: '매생이굴국밥 장교점', cuisine: '한식 (굴국밥)', description: '장교빌딩에 위치, 신선한 굴과 매생이로 시원하고 건강한 한 끼를 즐길 수 있습니다.', location: '장교빌딩 근처' },
-            { id: 3, name: '청와옥', cuisine: '한식 (순댓국/편백정식)', description: '진한 국물의 깔끔한 순댓국과 웰빙 편백정식이 유명한 곳입니다.', location: '을지로3가역 근처 (도보 10분)' },
-            { id: 4, name: '대련집', cuisine: '한식 (칼국수/보쌈)', description: '가성비 좋은 사골 칼국수와 부드러운 생배추 보쌈의 조화가 일품인 노포입니다.', location: '종로1가 근처 (도보 12분)' },
-            { id: 5, name: '을지다락', cuisine: '한식 (퓨전 파스타)', description: '한국적인 맛을 가미한 퓨전 파스타 전문점, 매콤크림파스타와 차돌박이들깨파스타가 인기입니다.', location: '을지로3가역 근처 (도보 8분)' },
-            { id: 6, name: '은주정', cuisine: '한식 (김치찌개)', description: '36년 전통, 숙성 김치로 끓여낸 얼큰하고 깊은 맛의 김치찌개를 맛볼 수 있습니다.', location: '을지로4가역 근처 (도보 15분)' },
-            { id: 7, name: '평래옥', cuisine: '한식 (평양냉면/닭무침)', description: '71년 전통을 자랑하는 노포 평양냉면과 별미인 닭무침은 꼭 맛봐야 할 메뉴입니다.', location: '을지로3가역 근처 (도보 10분)' },
-            { id: 8, name: '한일관', cuisine: '한식 (궁중 한정식/너비아니)', description: '1939년에 오픈한 궁중 한정식 전문점, 부드러운 너비아니가 유명합니다.', location: '광화문/시청 근처 (도보 15분)' },
-            { id: 9, name: '숭례도담 시청역', cuisine: '한식', description: '깔끔하고 정갈한 분위기에서 즐기는 정통 한식 코스 또는 단품 요리', location: '시청역 근처 (도보 10분)' },
-            { id: 10, name: '황소고집 종각역', cuisine: '한식 (돼지갈비/냉면)', description: '숯불 향 가득한 양념 돼지갈비와 시원한 냉면의 조합이 좋습니다.', location: '종각역 근처 (도보 12분)' },
-            { id: 11, name: '순남시래기 명동점', cuisine: '한식 (시래기국/도토리묵)', description: '따뜻하고 구수한 시래기국과 다양한 건강 곁들임 메뉴가 있습니다.', location: '명동역 근처 (도보 15분)' },
-            { id: 12, name: '한국집 롯데백화점본점', cuisine: '한식 (전주비빔밥)', description: '전통 전주비빔밥의 깊은 맛을 느낄 수 있는 곳입니다.', location: '롯데백화점 본점 지하 (도보 8분)' },
-            { id: 13, name: '이조식탁 을지로3가역', cuisine: '한식 (백반)', description: '집밥 같은 편안함, 매일 바뀌는 다양한 백반 메뉴를 맛볼 수 있습니다.', location: '을지로3가역 근처 (도보 7분)' },
-            { id: 14, name: '지하식당 (을지로4가역)', cuisine: '한식 (국수/김밥)', description: '진한 멸치 육수의 국수와 든든한 김밥으로 간단한 한 끼 해결!', location: '을지로4가역 근처 (도보 15분)' },
-            { id: 15, name: '잊지마식당 (을지로4가역)', cuisine: '한식 (생선구이/백반)', description: '갓 구운 고소한 생선구이와 푸짐한 백반으로 든든한 점심을 즐기세요.', location: '을지로4가역 근처 (도보 15분)' },
+            // 한식 (Korean)
+            { id: 1, name: '강남교자 센터원점', cuisine: '한식 (칼국수/만두)', description: '센터원 건물 내 위치, 시원한 국물과 부드러운 면의 칼국수, 든든한 만두가 인기입니다.', location: '센터원 지하 2층', priceRange: '1만원대' },
+            { id: 2, name: '매생이굴국밥 장교점', cuisine: '한식 (굴국밥)', description: '장교빌딩 1층에 위치, 신선한 굴과 매생이로 시원하고 건강한 한 끼를 즐길 수 있습니다.', location: '장교빌딩 1층 (센터원 도보 5분)', priceRange: '1만원대' },
+            { id: 3, name: '청와옥', cuisine: '한식 (순댓국/편백정식)', description: '진한 국물의 깔끔한 순댓국과 웰빙 편백정식이 유명한 곳입니다. 웨이팅이 있을 수 있습니다.', location: '을지로3가역 11번 출구 근처 (도보 10분)', priceRange: '1만원대' },
+            { id: 4, name: '대련집', cuisine: '한식 (칼국수/보쌈)', description: '가성비 좋은 사골 칼국수와 부드러운 생배추 보쌈의 조화가 일품인 노포입니다. 점심 특선도 좋습니다.', location: '종로1가 르메이에르 종로타운 1층 (도보 12분)', priceRange: '1만원대' },
+            { id: 5, name: '을지다락', cuisine: '한식 (퓨전 파스타)', description: '한국적인 맛을 가미한 퓨전 파스타 전문점, 매콤크림파스타와 차돌박이들깨파스타가 인기입니다. 젊은 층에 인기 많습니다.', location: '을지로3가 342-1 (도보 8분)', priceRange: '1만원대 후반' },
+            { id: 6, name: '은주정', cuisine: '한식 (김치찌개)', description: '36년 전통, 숙성 김치로 끓여낸 얼큰하고 깊은 맛의 김치찌개를 맛볼 수 있습니다. 푸짐한 양이 특징입니다.', location: '을지로4가역 1번 출구 근처 (도보 15분)', priceRange: '1만원대' },
+            { id: 7, name: '평래옥', cuisine: '한식 (평양냉면/닭무침)', description: '71년 전통을 자랑하는 노포 평양냉면과 별미인 닭무침은 꼭 맛봐야 할 메뉴입니다. 여름철 인기 맛집.', location: '을지로3가역 4번 출구 근처 (도보 10분)', priceRange: '1만원대' },
+            { id: 8, name: '한일관', cuisine: '한식 (궁중 한정식/너비아니)', description: '1939년에 오픈한 궁중 한정식 전문점, 부드러운 너비아니가 유명합니다. 격식 있는 식사에 좋습니다.', location: '광화문 파이낸스센터 지하1층 (도보 15분)', priceRange: '2만원대 이상' },
+            { id: 9, name: '숭례도담 시청역', cuisine: '한식', description: '깔끔하고 정갈한 분위기에서 즐기는 정통 한식 코스 또는 단품 요리. 비즈니스 런치로도 좋습니다.', location: '시청역 8번 출구 근처 (도보 10분)', priceRange: '2만원대' },
+            { id: 10, name: '황소고집 종각역', cuisine: '한식 (돼지갈비/냉면)', description: '숯불 향 가득한 양념 돼지갈비와 시원한 냉면의 조합이 좋습니다. 고기 점심으로 추천.', location: '종각역 4번 출구 근처 (도보 12분)', priceRange: '1만원대 후반' },
+            { id: 11, name: '순남시래기 명동점', cuisine: '한식 (시래기국/도토리묵)', description: '따뜻하고 구수한 시래기국과 다양한 건강 곁들임 메뉴가 있습니다. 건강한 점심을 찾는 분께 추천.', location: '명동역 6번 출구 근처 (도보 15분)', priceRange: '만원 이하' },
+            { id: 12, name: '한국집 롯데백화점본점', cuisine: '한식 (전주비빔밥)', description: '전통 전주비빔밥의 깊은 맛을 느낄 수 있는 곳입니다. 롯데백화점 쇼핑 후 식사로도 좋습니다.', location: '롯데백화점 본점 지하 1층 푸드코트 (도보 8분)', priceRange: '1만원대' },
+            { id: 13, name: '이조식탁 을지로3가역', cuisine: '한식 (백반)', description: '집밥 같은 편안함, 매일 바뀌는 다양한 백반 메뉴를 맛볼 수 있습니다. 가성비 좋은 백반집.', location: '을지로3가역 1번 출구 근처 (도보 7분)', priceRange: '만원 이하' },
+            { id: 14, name: '지하식당 (을지로4가역)', cuisine: '한식 (멸치국수/김밥)', description: '진한 멸치 육수의 국수와 든든한 김밥으로 간단한 한 끼 해결! 빠른 점심에 좋습니다.', location: '을지로4가역 7번 출구 근처 (도보 15분)', priceRange: '만원 이하' },
+            { id: 15, name: '잊지마식당 (을지로4가역)', cuisine: '한식 (생선구이/백반)', description: '갓 구운 고소한 생선구이와 푸짐한 백반으로 든든한 점심을 즐기세요. 백반정식 강추!', location: '을지로4가역 7번 출구 근처 (도보 15분)', priceRange: '1만원대' },
 
             // 중식 (Chinese)
-            { id: 16, name: '안동장', cuisine: '중식 (굴짬뽕/간풍 중새우)', description: '1948년부터 이어진 70년 전통의 노포, 겨울철 별미 굴짬뽕과 고급 간풍 중새우가 일품입니다.', location: '을지로3가 근처 (도보 10분)' },
-            { id: 17, name: '고량주관', cuisine: '중식 (다양한 요리)', description: '종각역 인근, 캐주얼한 분위기에서 다양한 중식 요리와 고량주를 즐길 수 있습니다.', location: '종각역 근처 (도보 13분)' },
-            { id: 18, name: '초류향', cuisine: '중식 (마파두부)', description: '을지로입구역 근처, 부드러운 두부와 매콤한 양념의 조화가 뛰어난 마파두부 맛집입니다.', location: '을지로입구역 근처 (도보 5분)' },
-            { id: 19, name: '가야성', cuisine: '중식 (짬뽕/짜장)', description: '해산물이 푸짐하게 들어간 시원한 국물의 짬뽕과 정통 짜장면을 맛볼 수 있습니다.', location: '을지로3가역 근처 (도보 8분)' },
-            { id: 20, name: '제일호', cuisine: '중식 (쟁반짜장/짬뽕)', description: '매콤한 부추와 청양고추가 어우러진 쟁반짜장이 인기이며, 얼큰한 짬뽕도 추천합니다.', location: '을지로입구역 근처 (도보 7분)' },
-            { id: 21, name: '촨촨지우바 세운상가', cuisine: '중식 (훠궈/꿔바로우)', description: '세운상가의 이색적인 중식당, 든든한 훠궈와 바삭한 꿔바로우가 별미입니다.', location: '세운상가 (도보 10분)' },
-            { id: 22, name: '룽키 충무로', cuisine: '중식', description: '충무로의 숨은 중식 노포, 깊은 맛의 짜장면과 다양한 요리를 즐겨보세요.', location: '충무로역 근처 (도보 15분)' },
-            { id: 23, name: '오구반점', cuisine: '중식 (군만두/짜장면)', description: '바삭하게 튀겨낸 군만두와 옛날 스타일의 고소한 짜장면이 유명합니다.', location: '을지로1가 근처 (도보 5분)' },
-            { id: 24, name: '송탄영빈루 을지타워점', cuisine: '중식', description: '을지타워 내 깔끔한 분위기의 중식당, 런치코스도 인기입니다.', location: '을지타워 (도보 3분)' },
-            { id: 25, name: '보배반점 을지로점', cuisine: '중식', description: '을지로의 인기 중식 체인점, 얼큰한 짬뽕과 푸짐한 짜장면이 좋습니다.', location: '을지로2가 근처 (도보 5분)' },
-            { id: 26, name: '을지반점 광장시장', cuisine: '중식 (볶음밥/짬뽕)', description: '광장시장 근처의 가성비 좋은 중식당, 볶음밥과 짬뽕이 인기입니다.', location: '광장시장 근처 (도보 15분)' },
-            { id: 27, name: '개화 명동', cuisine: '중식', description: '명동에서 오랫동안 사랑받아온 중식당, 전통적인 맛을 자랑합니다.', location: '명동 근처 (도보 15분)' },
-            { id: 28, name: '일일향 명동점', cuisine: '중식 (어향동고/육즙 탕수육)', description: '수요미식회에도 소개된 유명 중식당, 어향동고와 육즙 가득한 탕수육은 필수!', location: '명동 근처 (도보 15분)' },
-            { id: 29, name: '원흥 을지로입구역', cuisine: '중식 (삼선간짜장/삼선짬뽕)', description: '을지로입구역 근처 인기 중식당, 신선한 해산물이 가득한 삼선메뉴가 좋습니다.', location: '을지로입구역 근처 (도보 5분)' },
+            { id: 16, name: '안동장', cuisine: '중식 (굴짬뽕/간풍 중새우)', description: '1948년부터 이어진 70년 전통의 노포, 겨울철 별미 굴짬뽕과 고급 간풍 중새우가 일품입니다. 역사 깊은 맛집.', location: '을지로3가역 6번 출구 근처 (도보 10분)', priceRange: '2만원대' },
+            { id: 17, name: '고량주관', cuisine: '중식 (다양한 요리)', description: '종각역 인근, 캐주얼한 분위기에서 다양한 중식 요리와 고량주를 즐길 수 있습니다. 저녁 회식으로도 좋습니다.', location: '종각역 4번 출구 근처 (도보 13분)', priceRange: '1만원대 후반' },
+            { id: 18, name: '초류향', cuisine: '중식 (마파두부)', description: '을지로입구역 근처, 부드러운 두부와 매콤한 양념의 조화가 뛰어난 마파두부 맛집입니다. 마파두부 덮밥 추천.', location: '을지로입구역 3번 출구 근처 (도보 5분)', priceRange: '1만원대' },
+            { id: 19, name: '가야성', cuisine: '중식 (짬뽕/짜장)', description: '해산물이 푸짐하게 들어간 시원한 국물의 짬뽕과 정통 짜장면을 맛볼 수 있습니다. 해장으로도 좋습니다.', location: '을지로3가역 10번 출구 근처 (도보 8분)', priceRange: '만원 이하' },
+            { id: 20, name: '제일호', cuisine: '중식 (쟁반짜장/짬뽕)', description: '매콤한 부추와 청양고추가 어우러진 쟁반짜장이 인기이며, 얼큰한 짬뽕도 추천합니다. 직장인 점심 추천.', location: '을지로입구역 4번 출구 근처 (도보 7분)', priceRange: '1만원대' },
+            { id: 21, name: '촨촨지우바 세운상가', cuisine: '중식 (훠궈/꿔바로우)', description: '세운상가의 이색적인 중식당, 든든한 훠궈와 바삭한 꿔바로우가 별미입니다. 이색적인 점심을 찾는 분께.', location: '세운상가 3층 (도보 10분)', priceRange: '2만원대' },
+            { id: 22, name: '룽키 충무로', cuisine: '중식', description: '충무로의 숨은 중식 노포, 깊은 맛의 짜장면과 다양한 요리를 즐겨보세요. 옛날 짜장 맛집.', location: '충무로역 1번 출구 근처 (도보 15분)', priceRange: '만원 이하' },
+            { id: 23, name: '오구반점', cuisine: '중식 (군만두/짜장면)', description: '바삭하게 튀겨낸 군만두와 옛날 스타일의 고소한 짜장면이 유명합니다. 점심시간 항상 붐빕니다.', location: '을지로1가 시그니처타워 B1층 (도보 5분)', priceRange: '1만원대' },
+            { id: 24, name: '송탄영빈루 을지타워점', cuisine: '중식', description: '을지타워 내 깔끔한 분위기의 중식당, 런치코스도 인기입니다. 모임 장소로도 좋습니다.', location: '을지타워 지하 1층 (도보 3분)', priceRange: '1만원대 후반' },
+            { id: 25, name: '보배반점 을지로점', cuisine: '중식', description: '을지로의 인기 중식 체인점, 얼큰한 짬뽕과 푸짐한 짜장면이 좋습니다. 배달도 가능합니다.', location: '을지로2가 롯데호텔 근처 (도보 5분)', priceRange: '1만원대' },
+            { id: 26, name: '을지반점 광장시장', cuisine: '중식 (볶음밥/짬뽕)', description: '광장시장 근처의 가성비 좋은 중식당, 볶음밥과 짬뽕이 인기입니다. 시장 구경 후 한 끼!', location: '광장시장 내 (도보 15분)', priceRange: '만원 이하' },
+            { id: 27, name: '개화 명동', cuisine: '중식', description: '명동에서 오랫동안 사랑받아온 중식당, 전통적인 맛을 자랑합니다. 관광객에게도 인기.', location: '명동역 5번 출구 근처 (도보 15분)', priceRange: '1만원대 후반' },
+            { id: 28, name: '일일향 명동점', cuisine: '중식 (어향동고/육즙 탕수육)', description: '수요미식회에도 소개된 유명 중식당, 어향동고와 육즙 가득한 탕수육은 필수! 고급 중식.', location: '명동 눈스퀘어 근처 (도보 15분)', priceRange: '2만원대 이상' },
+            { id: 29, name: '원흥 을지로입구역', cuisine: '중식 (삼선간짜장/삼선짬뽕)', description: '을지로입구역 근처 인기 중식당, 신선한 해산물이 가득한 삼선메뉴가 좋습니다. 웨이팅 있을 수 있습니다.', location: '을지로입구역 2번 출구 근처 (도보 5분)', priceRange: '1만원대 후반' },
 
             // 일식 (Japanese)
-            { id: 30, name: '진작', cuisine: '일식 (스테키동/후토마키)', description: '을지로3가의 트렌디한 일식당, 부드러운 스테키동과 푸짐한 후토마키가 인기입니다.', location: '을지로3가 (도보 8분)' },
-            { id: 31, name: '도우또', cuisine: '일식 (일본 가정식)', description: '을지로3가의 높은 평점을 자랑하는 아늑한 일본 가정식 전문점입니다.', location: '을지로3가 (도보 8분)' },
-            { id: 32, name: '박지후스시', cuisine: '일식 (스시/사시미)', description: '충무로에 위치한 신선한 스시와 사시미를 즐길 수 있는 스시 전문점입니다.', location: '충무로 (도보 15분)' },
-            { id: 33, name: '스시 조', cuisine: '일식 (고급 스시 오마카세)', description: '웨스틴 조선 호텔 내 최고급 스시 오마카세를 경험할 수 있는 곳입니다.', location: '시청/소공동 (도보 10분)' },
-            { id: 34, name: '오복수산참치 광화문점', cuisine: '일식 (카이센동/참치)', description: '신선한 해산물이 가득한 카이센동과 고품격 참치회를 맛볼 수 있습니다.', location: '광화문 근처 (도보 15분)' },
-            { id: 35, name: '종로돈부리', cuisine: '일식 (돈부리)', description: '종각역 근처의 가성비 좋은 돈부리 전문점, 푸짐한 양이 특징입니다.', location: '종각역 근처 (도보 12분)' },
-            { id: 36, name: '지유켄', cuisine: '일식 (일본식 카레)', description: '을지로3가역 근처, 깊고 진한 맛의 일본식 카레를 맛볼 수 있습니다.', location: '을지로3가역 근처 (도보 7분)' },
-            { id: 37, name: '키노이에 오장동', cuisine: '일식 (돈까스/나베)', description: '을지로4가에 위치한 숨은 일식 맛집, 바삭한 돈까스와 따뜻한 나베가 인기입니다.', location: '을지로4가 (도보 15분)' },
-            { id: 38, name: '우동키노야 을지로점', cuisine: '일식 (우동/튀김)', description: '쫄깃한 면발의 수제 우동과 바삭한 튀김이 일품, 혼밥하기에도 좋습니다.', location: '을지로2가 근처 (도보 5분)' },
-            { id: 39, name: '움푹 을지로3가', cuisine: '일식 (타다끼)', description: '부드러운 소고기 타다끼가 특히 유명한 아늑한 이자카야입니다.', location: '을지로3가 (도보 8분)' },
-            { id: 40, name: '스시이로', cuisine: '일식 (스시 오마카세)', description: '을지로입구역 근처, 합리적인 가격으로 즐기는 스시 오마카세', location: '을지로입구역 근처 (도보 5분)' },
-            { id: 41, name: '갓포아키 을지로점', cuisine: '일식 (갓포요리)', description: '고급스러운 분위기에서 정통 갓포요리를 맛볼 수 있습니다.', location: '을지로1가 근처 (도보 7분)' },
-            { id: 42, name: '쿠마카롱', cuisine: '일식 (돈까스/카레)', description: '바삭하고 두툼한 돈까스와 수제 카레가 일품인 맛집입니다.', location: '을지로3가역 근처 (도보 10분)' }
+            { id: 30, name: '진작', cuisine: '일식 (스테키동/후토마키)', description: '을지로3가의 트렌디한 일식당, 부드러운 스테키동과 푸짐한 후토마키가 인기입니다. 데이트 맛집.', location: '을지로3가 342-1 (도보 8분)', priceRange: '1만원대 후반' },
+            { id: 31, name: '도우또', cuisine: '일식 (일본 가정식)', description: '을지로3가의 높은 평점을 자랑하는 아늑한 일본 가정식 전문점입니다. 깔끔한 한 끼에 좋습니다.', location: '을지로3가 340-1 (도보 8분)', priceRange: '1만원대' },
+            { id: 32, name: '박지후스시', cuisine: '일식 (스시/사시미)', description: '충무로에 위치한 신선한 스시와 사시미를 즐길 수 있는 스시 전문점입니다. 신선한 재료가 특징.', location: '충무로역 8번 출구 근처 (도보 15분)', priceRange: '2만원대' },
+            { id: 33, name: '스시 조', cuisine: '일식 (고급 스시 오마카세)', description: '웨스틴 조선 호텔 내 최고급 스시 오마카세를 경험할 수 있는 곳입니다. 특별한 날 추천.', location: '웨스틴 조선 서울 지하 1층 (도보 10분)', priceRange: '5만원대 이상' },
+            { id: 34, name: '오복수산참치 광화문점', cuisine: '일식 (카이센동/참치)', description: '신선한 해산물이 가득한 카이센동과 고품격 참치회를 맛볼 수 있습니다. 해산물 덮밥 맛집.', location: '광화문 교보빌딩 지하 1층 (도보 15분)', priceRange: '2만원대' },
+            { id: 35, name: '종로돈부리', cuisine: '일식 (돈부리)', description: '종각역 근처의 가성비 좋은 돈부리 전문점, 푸짐한 양이 특징입니다. 혼밥에도 적합합니다.', location: '종각역 12번 출구 근처 (도보 12분)', priceRange: '1만원대' },
+            { id: 36, name: '지유켄', cuisine: '일식 (일본식 카레)', description: '을지로3가역 근처, 깊고 진한 맛의 일본식 카레를 맛볼 수 있습니다. 튀김 토핑 추가 추천.', location: '을지로3가역 1번 출구 근처 (도보 7분)', priceRange: '1만원대' },
+            { id: 37, name: '키노이에 오장동', cuisine: '일식 (돈까스/나베)', description: '을지로4가에 위치한 숨은 일식 맛집, 바삭한 돈까스와 따뜻한 나베가 인기입니다. 안락한 분위기.', location: '을지로4가역 1번 출구 근처 (도보 15분)', priceRange: '1만원대 후반' },
+            { id: 38, name: '우동키노야 을지로점', cuisine: '일식 (우동/튀김)', description: '쫄깃한 면발의 수제 우동과 바삭한 튀김이 일품, 혼밥하기에도 좋습니다. 점심시간 인기.', location: '을지로2가 파인애비뉴 지하 1층 (도보 5분)', priceRange: '만원 이하' },
+            { id: 39, name: '움푹 을지로3가', cuisine: '일식 (타다끼)', description: '부드러운 소고기 타다끼가 특히 유명한 아늑한 이자카야입니다. 저녁에 가볍게 한 잔 하기 좋습니다.', location: '을지로3가 342-12 (도보 8분)', priceRange: '2만원대 이상' },
+            { id: 40, name: '스시이로', cuisine: '일식 (스시 오마카세)', description: '을지로입구역 근처, 합리적인 가격으로 즐기는 스시 오마카세. 런치 오마카세 추천.', location: '을지로입구역 4번 출구 근처 (도보 5분)', priceRange: '3만원대' },
+            { id: 41, name: '갓포아키 을지로점', cuisine: '일식 (갓포요리)', description: '고급스러운 분위기에서 정통 갓포요리를 맛볼 수 있습니다. 비즈니스 런치로도 훌륭합니다.', location: '을지로1가 시그니처타워 B1층 (도보 7분)', priceRange: '3만원대 이상' },
+            { id: 42, name: '쿠마카롱', cuisine: '일식 (돈까스/카레)', description: '바삭하고 두툼한 돈까스와 수제 카레가 일품인 맛집입니다. 돈까스 덕후에게 강력 추천!', location: '을지로3가역 11번 출구 근처 (도보 10분)', priceRange: '1만원대' }
         ];
 
         let currentRecommendation = null;
@@ -296,6 +296,7 @@
                 card.innerHTML = `
                     <h3>${currentRecommendation.name}</h3>
                     <p><strong>종류:</strong> ${currentRecommendation.cuisine}</p>
+                    <p><strong>금액대:</strong> ${currentRecommendation.priceRange}</p>
                     <p><strong>설명:</strong> ${currentRecommendation.description}</p>
                     <p><strong>위치:</strong> ${currentRecommendation.location}</p>
                 `;

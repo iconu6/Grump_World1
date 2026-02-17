@@ -301,7 +301,8 @@
                 `;
                 card.addEventListener('click', () => {
                     const restaurantName = card.dataset.name;
-                    const mapUrl = `https://m.map.naver.com/search/result.naver?query=${encodeURIComponent(restaurantName + ' 을지로')}`;
+                    // Removed '을지로' from the search query as per user feedback
+                    const mapUrl = `https://m.map.naver.com/search/result.naver?query=${encodeURIComponent(restaurantName)}`;
                     window.open(mapUrl, '_blank');
                 });
                 displayElement.appendChild(card);

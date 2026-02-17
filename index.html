@@ -301,9 +301,10 @@
                 `;
                 card.addEventListener('click', () => {
                     const restaurantName = card.dataset.name;
-                    // Changed from web to app deep link
-                    // Added &appname for attribution. If app not installed, this link might not work.
-                    const mapUrl = `navermap://search?query=${encodeURIComponent(restaurantName)}&appname=EuljiroLunchRecommender`;
+                    const restaurantLocation = card.dataset.location; // Get location data
+                    // Combine name and location for a more precise search
+                    const searchQuery = `${restaurantName} ${restaurantLocation}`;
+                    const mapUrl = `navermap://search?query=${encodeURIComponent(searchQuery)}&appname=EuljiroLunchRecommender`;
                     window.open(mapUrl, '_blank');
                 });
                 displayElement.appendChild(card);

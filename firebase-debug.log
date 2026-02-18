@@ -1,0 +1,371 @@
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-17T13:34:19.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:19.065Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-17T13:34:19.067Z] Checked if tokens are valid: false, expires at: 1771324893924
+[debug] [2026-02-17T13:34:19.067Z] Checked if tokens are valid: false, expires at: 1771324893924
+[debug] [2026-02-17T13:34:19.068Z] > refreshing access token with scopes: []
+[debug] [2026-02-17T13:34:19.071Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-17T13:34:19.071Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-17T13:34:19.121Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:19.122Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-17T13:34:19.122Z] Checked if tokens are valid: false, expires at: 1771324893924
+[debug] [2026-02-17T13:34:19.122Z] Checked if tokens are valid: false, expires at: 1771324893924
+[debug] [2026-02-17T13:34:19.123Z] > refreshing access token with scopes: []
+[debug] [2026-02-17T13:34:19.123Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-17T13:34:19.123Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-17T13:34:19.184Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-17T13:34:19.186Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-17T13:34:19.207Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-17T13:34:19.228Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-17T13:34:19.229Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-17T13:34:19.242Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-17T13:34:19.434Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-17T13:34:19.435Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-17T13:34:19.446Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.446Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.448Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.449Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.450Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.450Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.472Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.472Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.473Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.473Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.473Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.473Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.475Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.475Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.477Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.478Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.479Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.480Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.482Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [none]
+[debug] [2026-02-17T13:34:19.482Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.531Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-17T13:34:19.532Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-17T13:34:19.532Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.532Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.534Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.535Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.535Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.535Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.546Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.546Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.546Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.546Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:19.547Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.547Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.549Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.549Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.552Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.553Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.555Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-17T13:34:19.557Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:19.560Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [none]
+[debug] [2026-02-17T13:34:19.560Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-17T13:34:20.487Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com 403
+[debug] [2026-02-17T13:34:20.487Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [omitted]
+[debug] [2026-02-17T13:34:20.510Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-17T13:34:20.510Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-17T13:34:20.528Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-17T13:34:20.529Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-17T13:34:20.550Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com 200
+[debug] [2026-02-17T13:34:20.550Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-17T13:34:20.569Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-17T13:34:20.572Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-17T13:34:20.578Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:20.578Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-17T13:34:20.578Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:20.578Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:20.579Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-17T13:34:20.592Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com 200
+[debug] [2026-02-17T13:34:20.592Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-17T13:34:20.609Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-17T13:34:20.611Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-17T13:34:20.630Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com 403
+[debug] [2026-02-17T13:34:20.633Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [omitted]
+[debug] [2026-02-17T13:34:20.638Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-17T13:34:20.639Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-17T13:34:20.639Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-17T13:34:20.639Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-17T13:34:21.585Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-17T13:34:21.585Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-17T13:34:21.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:21.588Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-17T13:34:21.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:21.605Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-17T13:34:21.605Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:21.605Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:21.605Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-17T13:34:21.610Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:21.611Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-17T13:34:21.611Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:21.611Z] Checked if tokens are valid: true, expires at: 1771338858229
+[debug] [2026-02-17T13:34:21.611Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-17T13:34:21.804Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-17T13:34:21.804Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-17T13:34:21.806Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:21.806Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-17T13:34:21.829Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-17T13:34:21.830Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-17T13:34:21.833Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-17T13:34:21.833Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:44.143Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:44.144Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:39:44.146Z] Checked if tokens are valid: false, expires at: 1771338858229
+[debug] [2026-02-18T00:39:44.147Z] Checked if tokens are valid: false, expires at: 1771338858229
+[debug] [2026-02-18T00:39:44.147Z] > refreshing access token with scopes: []
+[debug] [2026-02-18T00:39:44.150Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-18T00:39:44.150Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:44.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:44.191Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:39:44.191Z] Checked if tokens are valid: false, expires at: 1771338858229
+[debug] [2026-02-18T00:39:44.191Z] Checked if tokens are valid: false, expires at: 1771338858229
+[debug] [2026-02-18T00:39:44.191Z] > refreshing access token with scopes: []
+[debug] [2026-02-18T00:39:44.192Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-02-18T00:39:44.192Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-18T00:39:44.239Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-18T00:39:44.241Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-18T00:39:44.278Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:39:44.301Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-02-18T00:39:44.301Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-02-18T00:39:44.317Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:39:44.544Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:39:44.544Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T00:39:44.557Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.557Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.558Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.558Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.558Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.559Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.579Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.579Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.580Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.580Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:44.580Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [none]
+[debug] [2026-02-18T00:39:44.580Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:44.582Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T00:39:44.583Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:44.585Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-18T00:39:44.585Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:44.587Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T00:39:44.587Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:44.588Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [none]
+[debug] [2026-02-18T00:39:44.588Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:45.315Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:39:45.315Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T00:39:45.316Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.318Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.318Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.318Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.319Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.319Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.338Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.339Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.341Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.341Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.341Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [none]
+[debug] [2026-02-18T00:39:45.341Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:45.343Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T00:39:45.343Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:45.345Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-18T00:39:45.345Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:45.349Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T00:39:45.349Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:45.352Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [none]
+[debug] [2026-02-18T00:39:45.353Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:39:45.629Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com 403
+[debug] [2026-02-18T00:39:45.629Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [omitted]
+[debug] [2026-02-18T00:39:45.656Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T00:39:45.657Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T00:39:45.664Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T00:39:45.664Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T00:39:45.667Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-18T00:39:45.668Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-18T00:39:45.683Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com 200
+[debug] [2026-02-18T00:39:45.684Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:45.708Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:45.709Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:39:45.710Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.711Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:45.711Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:39:46.428Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com 403
+[debug] [2026-02-18T00:39:46.429Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [omitted]
+[debug] [2026-02-18T00:39:46.444Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T00:39:46.448Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T00:39:46.634Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T00:39:46.634Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T00:39:46.650Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-18T00:39:46.650Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-18T00:39:46.670Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com 200
+[debug] [2026-02-18T00:39:46.670Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-18T00:39:46.730Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:39:46.731Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:46.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:46.733Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:46.769Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:46.769Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:39:46.771Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:46.772Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:46.772Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:46.777Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:46.777Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:39:46.777Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:46.777Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:39:46.777Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:39:46.991Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:39:46.991Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:46.993Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:46.994Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:39:46.996Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:39:46.996Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:39:47.002Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:39:47.005Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:47:21.577Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:21.578Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:47:21.579Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.580Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.580Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:21.580Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:47:21.581Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.581Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.582Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:47:21.629Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:47:21.866Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:47:21.866Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T00:47:21.877Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.879Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.880Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.880Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.881Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.881Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.898Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.898Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.898Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.899Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.899Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.899Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.901Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.901Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.903Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.903Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.905Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.905Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.907Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [none]
+[debug] [2026-02-18T00:47:21.907Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.909Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:47:21.909Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[debug] [2026-02-18T00:47:21.910Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.910Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.910Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.910Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.911Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.911Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.919Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.919Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.920Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.920Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:21.920Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.920Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.922Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.923Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.926Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.926Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.929Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-02-18T00:47:21.929Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:21.936Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [none]
+[debug] [2026-02-18T00:47:21.936Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com  x-goog-user-project=product-week1-lotte
+[debug] [2026-02-18T00:47:22.951Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com 403
+[debug] [2026-02-18T00:47:22.952Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [omitted]
+[debug] [2026-02-18T00:47:22.977Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-18T00:47:22.978Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-02-18T00:47:22.987Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com 200
+[debug] [2026-02-18T00:47:22.987Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-18T00:47:23.016Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T00:47:23.016Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T00:47:23.019Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com 200
+[debug] [2026-02-18T00:47:23.019Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firestore.googleapis.com [omitted]
+[debug] [2026-02-18T00:47:23.021Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T00:47:23.021Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T00:47:23.022Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-02-18T00:47:23.022Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-02-18T00:47:23.023Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com 200
+[debug] [2026-02-18T00:47:23.023Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:47:23.026Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:23.026Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:47:23.027Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:23.027Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:23.027Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:47:23.029Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-02-18T00:47:23.029Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-02-18T00:47:23.029Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com 403
+[debug] [2026-02-18T00:47:23.029Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/product-week1-lotte/services/firebaseio.com [omitted]
+[debug] [2026-02-18T00:47:24.033Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:47:24.033Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:47:24.038Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:24.039Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:47:24.061Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:24.061Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:47:24.061Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:24.061Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:24.061Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:47:24.071Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:24.071Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:47:24.071Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:24.071Z] Checked if tokens are valid: true, expires at: 1771378783304
+[debug] [2026-02-18T00:47:24.071Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo [none]
+[debug] [2026-02-18T00:47:25.051Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:47:25.051Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:47:25.052Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:25.053Z] > authorizing via signed-in user (choiminkeun@gmail.com)
+[debug] [2026-02-18T00:47:25.108Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo 200
+[debug] [2026-02-18T00:47:25.108Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/product-week1-lotte/billingInfo {"name":"projects/product-week1-lotte/billingInfo","projectId":"product-week1-lotte","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-02-18T00:47:25.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-18T00:47:25.112Z] > authorizing via signed-in user (choiminkeun@gmail.com)

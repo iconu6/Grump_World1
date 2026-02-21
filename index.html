@@ -42,20 +42,23 @@
             color: #555;
         }
         .intro-button {
-            position: absolute;
-            top: 5px;
-            right: 20px;
-            background-color: #007bff; /* Blue */
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 0.9em;
-            transition: background-color 0.3s ease;
-        }
-        .intro-button:hover {
-            background-color: #0056b3;
-        }
+    position: absolute;
+    top: 5px;
+    right: 20px; /* index.html은 원래 우측이었으므로 위치 유지 */
+    background-color: #007bff; /* 기존 블루 유지 */
+    color: white;
+    padding: 8px 0;   /* 상하 패딩만 유지 */
+    width: 85px;      /* 고정 너비 설정 (4글자 기준 넉넉하게) */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.intro-button:hover {
+    background-color: #0056b3;
+}
         .introduction, .how-to-use, .euljiro-special, .about-service, .disclaimer {
             margin-bottom: 25px;
             padding: 0 10px;
@@ -180,10 +183,11 @@
             }
             /* New styles for button and title spacing */
             .intro-button {
-                top: 5px; /* Move button slightly higher */
-                right: 10px; /* Adjust right spacing for smaller screens */
-                font-size: 0.8em; /* Slightly smaller font size */
-                padding: 6px 12px;
+                width: 75px;   /* 모바일 고정 너비 */
+                padding: 6px 0;
+                font-size: 0.8em;
+                top: 5px;
+                right: 10px;
             }
             header {
                 padding-top: 40px; /* Add more top padding to header */

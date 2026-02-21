@@ -5,7 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-9906435408281205">
     <title>소개 - 을지로 점심메뉴 추천</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-top: 40px; /* Adjusted for PC layout */
+        }
+        header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            margin-top: 15px; /* Adjusted for PC layout */
+        }
+        .back-button {
+            position: absolute;
+            top: 5px; /* Adjusted for PC layout */
+            left: 20px;
+            background-color: #6c757d; /* Gray */
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #5a6268;
+        }
+        .content {
+            padding: 0 10px;
+            text-align: justify;
+        }
+        .content h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Media Queries for Mobile Optimization */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+                margin-top: 15px; /* Push H1 down from the top of the header */
+            }
+            .back-button {
+                padding: 6px 12px;
+                font-size: 0.8em;
+                top: 5px; /* Move button slightly higher */
+                left: 10px; /* Adjust left spacing for smaller screens */
+            }
+            .content h2 {
+                font-size: 1.5em;
+            }
+            .content p {
+                font-size: 0.9em;
+            }
+            footer {
+                padding: 15px;
+                font-size: 0.8em;
+            }
+            /* No need to set header padding-top here if it's already set in base and doesn't need override */
+        }
+    </style>
 </head>
 <body>
     <div class="container">

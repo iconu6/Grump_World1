@@ -37,20 +37,23 @@
             margin-top: 15px; /* Adjusted for PC layout */
         }
         .back-button {
-            position: absolute;
-            top: 5px; /* Adjusted for PC layout */
-            left: 20px;
-            background-color: #6c757d; /* Gray */
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 0.9em;
-            transition: background-color 0.3s ease;
-        }
-        .back-button:hover {
-            background-color: #5a6268;
-        }
+    position: absolute;
+    top: 5px;
+    right: 20px; /* 좌측(left)에서 우측(right)으로 변경 */
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 0;
+    width: 85px; /* index.html과 동일한 너비 */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
         .content {
             padding: 0 10px;
             text-align: justify;
@@ -86,10 +89,12 @@
                 margin-top: 15px; /* Push H1 down from the top of the header */
             }
             .back-button {
-                padding: 6px 12px;
+                width: 75px;
+                padding: 6px 0;
                 font-size: 0.8em;
-                top: 5px; /* Move button slightly higher */
-                left: 10px; /* Adjust left spacing for smaller screens */
+                top: 5px;
+                right: 10px; /* 모바일에서도 우측으로 배치 */
+                left: auto;  /* 기존 left 값이 영향을 주지 않도록 초기화 */
             }
             .content h2 {
                 font-size: 1.5em;
